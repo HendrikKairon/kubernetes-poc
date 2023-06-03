@@ -44,7 +44,7 @@ def main():
 
         utc_time = datetime.utcfromtimestamp(timestamp_s)
         logging.info(f"Printing price in pod: {price} at {utc_time}")
-        message = f"Fetched price from exchange: {price} at {utc_time}"
+        message = f"Fetched price from exchange: {symbol} - {price} at {utc_time}"
         send_message(CHAT_ID, message)
         time.sleep(5)
 
